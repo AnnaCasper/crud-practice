@@ -19,10 +19,20 @@
     - npm install monk --save
   - add dotenv file (see below)
   - add connection to database in index.js
+    ```js
+    var db = require('monk')(process.env.MONGO_URI_CONCERTS)
+    var concertCollection = db.get('concerts')
+    ```
 - ENV variables, dotenv etc...
   - command line:
     - npm install dotenv --save
     - touch .gitignore
     - touch .env
-  - add .env file to gitignore
+  - add node_modules and .env to gitignore
+  - require in app.js
+    ```js
+    require(‘dotenv’).load()
+    ```
+  - access variables with process.env
+  - set variables on production servers (see deploying to heroku below)
 - Deploying to Heroku
