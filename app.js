@@ -5,10 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+require('dotenv').load()
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
-require('dotenv').load()
 
 var app = express();
 

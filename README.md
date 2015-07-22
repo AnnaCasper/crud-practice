@@ -1,4 +1,7 @@
-## CRUD Practice Repo
+# CRUD Practice Repo
+
+## Heroku URL:
+https://fierce-stream-2276.herokuapp.com/concerts/new
 
 ## Objectives:
 
@@ -14,7 +17,9 @@
     - get new concert page
     - set up database (see below)
     - post new concert
+
 - Basic CSS
+
 - Wiring up a database
   - command line:
     - npm install monk --save
@@ -26,6 +31,7 @@
 
     var concertCollection = db.get('concerts')
     ```
+
 - ENV variables, dotenv etc...
   - command line:
     - npm install dotenv --save
@@ -39,6 +45,7 @@
     ```
   - access variables with process.env
   - set variables on production servers (see deploying to heroku below)
+
 - Deploying to Heroku
   - command line:
     - git add and commit
