@@ -11,4 +11,9 @@ router.get('/concerts', function(req, res, next){
   res.render('concerts');
 });
 
+//GET concerts new
+router.get('/concerts/new', function(req, res, next){
+  res.render('concerts/new')
+})
+
 module.exports = router;
