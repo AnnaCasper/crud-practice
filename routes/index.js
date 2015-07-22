@@ -10,7 +10,9 @@ router.get('/', function(req, res, next) {
 
 //GET concerts index
 router.get('/concerts', function(req, res, next){
-  res.render('concerts');
+  concertCollection.find({}, function(err, concerts){
+    res.render('concerts', {concerts: concerts});
+  })
 });
 
 //GET concerts new
@@ -25,6 +27,13 @@ router.post('/new', function(req, res, next){
     concertDate: req.body.concertDate
   }, function(err, data){
     res.redirect('/concerts');
+  });
+});
+
+//GET show page
+router.get('/concerts/:id', function(req, res, next){
+  concertCollection.findOne({_id: req.params.id}, function(err, thisConcert){
+    res.render('concerts/show', {thisConcert: thisConcert});
   });
 });
 

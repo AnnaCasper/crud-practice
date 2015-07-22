@@ -3,4 +3,15 @@ extends ../layout
 block content
   h1 ALL CONCERTS
   p
+  table 
+    thead
+      th Band Name
+      th Concert Date
+    tbody
+      for concert in concerts
+        tr
+          td
+            a(href= "/concerts/" + concert._id) #{concert.bandName}
+          td= concert.concertDate
+    
   a(href="/concerts/new") Add New Concert
