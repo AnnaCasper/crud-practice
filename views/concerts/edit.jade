@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Edit Concert Info
+  form(action="/edit/" + thisConcert._id method="post")
+    input(type='text' name='bandName' value=thisConcert.bandName)
+    p
+    input(type="date" name="concertDate" value=thisConcert.concertDate)
+    p
+    input(type="submit" value="Edit Concert")
+    p
+    a(href="/concerts/" + thisConcert._id) cancel

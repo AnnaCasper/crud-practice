@@ -4,3 +4,7 @@ block content
   h1 Showing Concert Info for #{thisConcert.bandName}
   p
   p Concert Date: #{thisConcert.concertDate}
+  p
+  a(href="/concerts/" + thisConcert._id + '/edit') Edit this Concert
+  p
+  a(href="/concerts") Home

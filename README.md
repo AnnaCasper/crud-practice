@@ -19,6 +19,8 @@ https://fierce-stream-2276.herokuapp.com/concerts/new
     - post new concert
     - add find all concerts to concerts index route
     - get show page
+    - get edit page
+    - post edits from edit page
 
 - Basic CSS
 
