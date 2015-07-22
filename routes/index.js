@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('monk')(process.env.MONGO_URI_CONCERTS)
+var db = require('monk')(process.env.MONGOLAB_URI)
 var concertCollection = db.get('concerts')
 
 /* GET home page. */
