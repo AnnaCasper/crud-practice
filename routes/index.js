@@ -53,4 +53,10 @@ router.post('/edit/:id', function(req, res, next){
   res.redirect('/concerts/' + req.params.id)
 });
 
+//POST delete
+router.post('/delete/:id', function(req, res, next){
+  concertCollection.remove({_id: req.params.id});
+  res.redirect('/concerts');
+})
+
 module.exports = router;

@@ -21,6 +21,7 @@ https://fierce-stream-2276.herokuapp.com/concerts/new
     - get show page
     - get edit page
     - post edits from edit page
+    - post delete concert 
 
 - Basic CSS
 

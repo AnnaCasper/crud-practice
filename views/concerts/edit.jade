@@ -9,4 +9,7 @@ block content
     p
     input(type="submit" value="Edit Concert")
     p
-    a(href="/concerts/" + thisConcert._id) cancel
+  form(action="/delete/" + thisConcert._id method="post")
+    input(type="submit" value="Delete this Concert")
+    p
+  a(href="/concerts/" + thisConcert._id) cancel
