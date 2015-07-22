@@ -2,4 +2,10 @@ extends ../layout
 
 block content
   h1 CREATE NEW CONCERT
+  form(action="/new" method="post")
+    input(type='text' name='bandName' placeholder="Band Name")
+    p
+    input(type="date" name="concertDate" placeholder="Concert Date")
+    p
+    input(type="submit" value="Create Concert")
   

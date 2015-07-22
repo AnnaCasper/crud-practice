@@ -11,7 +11,18 @@
   - set up routes and views
     - get concerts index page
     - get new concert page
+    - set up database (see below)
+    - post new concert
 - Basic CSS
 - Wiring up a database
+  - command line:
+    - npm install monk --save
+  - add dotenv file (see below)
+  - add connection to database in index.js
 - ENV variables, dotenv etc...
+  - command line:
+    - npm install dotenv --save
+    - touch .gitignore
+    - touch .env
+  - add .env file to gitignore
 - Deploying to Heroku
