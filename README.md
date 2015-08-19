@@ -21,7 +21,7 @@ https://fierce-stream-2276.herokuapp.com/concerts/new
     - get show page
     - get edit page
     - post edits from edit page
-    - post delete concert 
+    - post delete concert
 
 - Basic CSS
 
@@ -58,4 +58,5 @@ https://fierce-stream-2276.herokuapp.com/concerts/new
     - git push heroku master
     - heroku addons:add mongolab
     - heroku config (to see MONGOLAB_URI environment variable is now set to that database)
+    - heroku config:set SESSSION_KEY1=lkajsdklgjio8injnfwue8
     - heroku open
